@@ -1,0 +1,51 @@
+.auth {
+    .login-form {
+        width: 335px;
+        margin: 50px auto;
+        text-align: center;
+        background-color: #1a1a1a;
+        padding: 70px 70px 160px;
+        border-radius: 10px;
+    }
+    .logo-container {
+        img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+        }
+    }
+    .input-container {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        label {
+            color: #e0e0e0;
+        }
+        .pass-field {
+            width: 300px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #2c3e50ae;
+            border: 2px solid #419cd8;
+            color: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+        }
+        input::placeholder {
+            color: #419cd8;
+        }
+    }
+    .submit-btn {
+        width: 335px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #2ecc71;
+        border: none;
+        color: #222222;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}

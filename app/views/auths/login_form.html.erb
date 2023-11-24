@@ -1,0 +1,21 @@
+<div class="auth">
+    <div class="login-form">
+        <%= form_with(model: @user, url: "#", local: true) do |f| %>
+            <div class="logo-container">
+                <img src="/assets/logo.png" alt="">
+            </div>
+
+            <div class="input-container">
+                <%= f.password_field :password, placeholder: "Password", class: "pass-field" %>
+                
+                <div style="text-align: left; margin-top: 10px;">
+                    <%= f.check_box :remember_me %>
+                    <%= f.label :remember_me, "パスワードを表示する" %>
+                </div>
+            </div>
+            
+            <%= f.submit "OK", data: { disable_with: "更新中..." }, class: "submit-btn" %>
+        <% end %>
+    </div>
+    
+</div>
